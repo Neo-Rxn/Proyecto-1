@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;1,600&family=Montserrat:wght@300;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+
+}
+
+header {
+  position:fixed;
+  width: 100%;
+  height: 70px;
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /*border: 1px solid blue;
+  margin-left: 0;*/
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.lista-menu {
+  margin-top:0;
+  margin-right: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.lista-menu>li {
+  height: 100%;
+  justify-content: space-between;
+}
+
+li>a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width:100%;
+  margin: 0 20px;
+  padding: 5px 10px;
+}
+
+
+li>a:link {
+  color: darkslateblue;
+  text-decoration: none;
+
+}
+
+.lista-menu > li > a:hover {
+  color: white;
+  background-color: darkslateblue;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+
+.search-bar {
+  width: 45%;
+  height: 60%;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: #f4f2f2;
+  color: grey;
+}
+
+.search-bar input {
+  width: 90%;
+  height: 60%;
+  text-align: left;
+  padding-left: 10px;
+  align-items: center;
+  border: 1px;
+  background-color: #f4f2f2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.search-bar > .material-icons:hover {
+  cursor: pointer;
+}
+.nav {
+  width: 70%;
+  /*border: 1px solid red;*/
+}
+
+h1{
+  margin:20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.title-change{
+  color:darkslateblue;
+  font-weight: 600;
+}
+
+.Biography-Left {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: aquamarine;
+}
+
+.Biography-right {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+  justify-content: left;
+  background-color: cadetblue;
+  margin-bottom: 10px;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+}
+
+.description-right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.front-image {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.text>h2 {
+  font-family: 'Alegreya', serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+
+.Biography-button_readMore {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+  align-self: flex-end;
+  justify-content: center;
+
+}
+
+
+.Biography-button_readMore-right {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+  align-self: flex-start;
+}
+
+
+.Biography-Left button {
+  display: flex;
+  width: 120px;
+  height: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border: 0;
+  background-color: lightcoral;
+  color: white;
+  border-radius: 5%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Biography-Left button:hover {
+  background-color: lightskyblue;
+  color: black;
+  cursor: pointer;
+}
+
+.Biography-right button {
+  /*display: flex;*/
+  display: block;
+  width: 120px;
+  height: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 900;
+  border: 0;
+  background-color: lightcoral;
+  color: white;
+  border-radius: 5%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.Biography-right button:hover {
+  background-color: lightskyblue;
+  transition: background-color 1s;
+  color: black;
+  cursor: pointer;
+}
+
+.about{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  background-color: firebrick;
+}
+
+.about-image{
+  margin: 10px 10px;
+  width: 50%;  
+  display: flex;
+    align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+  color:white;
+  border-right-style: dotted;
+}
+.about-description{
+  margin: 10px;
+  padding-right: 45px;
+  padding-left: 45px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color:white;
+}
